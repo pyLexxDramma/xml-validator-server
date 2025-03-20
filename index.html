@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XML редактор со схемой XSD</title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 300px;
+        }
+        #messages {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>XML редактор со схемой XSD</h1>
+
+    <div>
+        <label for="xsdFile">Загрузить XSD схему:</label>
+        <input type="file" id="xsdFile" accept=".xsd" multiple>
+    </div>
+
+    <div>
+        <label for="xmlFile">Загрузить XML данные:</label>
+        <input type="file" id="xmlFile" accept=".xml">
+    </div>
+
+    <div>
+        <label for="xmlEditor">Редактор XML:</label>
+        <textarea id="xmlEditor"></textarea>
+    </div>
+
+    <div>
+        <label for="xsdSelect">Выбрать XSD схему:</label>
+        <select id="xsdSelect">
+            <option value="">-- Выберите схему --</option>
+        </select>
+    </div>
+
+    <div>
+        <button id="checkXml">ПРОВЕРИТЬ XML</button>
+        <button id="saveXml">Сохранить XML</button>
+    </div>
+
+    <div id="messages">
+        <!-- Сообщения будут отображаться здесь -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
