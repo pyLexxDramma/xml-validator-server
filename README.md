@@ -42,9 +42,9 @@ xml-editor/ ├── index.html # Основной HTML файл для пол�
     cd xml-editor
     ```
 
-2.  **Установите Node.js зависимости:**
+2.  **Установите зависимости:**
     ```bash
-    npm install
+    npm install express libxmljs cors body-parser codemirror
     ```
 
 3.  **Запустите сервер:**
